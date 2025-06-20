@@ -78,6 +78,7 @@ html {
     line-height: 1.7;
     font-size: 1rem;
     color: #1f2937;
+    text-align: center;
   }
   .about-textbox p {
     margin-bottom: 1rem;
@@ -98,14 +99,14 @@ html {
 
   main {
     flex: 1;
-    padding: 2rem 1rem;
+    padding: 0rem 1rem 2rem 1rem;
     max-width: 1200px;
     margin: auto;
   }
 
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(1, 500px);
+    grid-template-columns: repeat(2, 500px);
     gap: 1rem;
     max-width: 1000px;
     justify-content: center;
@@ -151,7 +152,8 @@ html {
 
   .services-grid {
     display: grid;
-    grid-template-columns: repeat(1, 750px); /* 4 boxes per row */
+    justify-content: center;
+    grid-template-columns: repeat(1, 600px); /* 4 boxes per row */
     gap: 2rem;
     margin-top: 2rem;
   }
@@ -164,11 +166,19 @@ html {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
+
   .service-box:hover {
     transform: translateY(-1px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
+
+  .service-box img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover; /* Adjusts image to fill the box and crop if needed */
+  border-radius: 8px; /* Optional: to match the box styling */
+  margin-bottom: 1rem; /* Spacing below image */
+}
 
   .service-box-link {
     text-decoration: none;
