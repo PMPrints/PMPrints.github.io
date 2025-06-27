@@ -71,11 +71,11 @@ through our shop below. To learn more about us, check out our socials
           </div>
         </div>
         </a>
-        <a href="https://pmp26.myshopify.com/products/business-card-service" class="product">
+        <a href="https://pmp26.myshopify.com/products/wallet" class="product">
         <div class="product">
-          <img src="Under Construction.png" alt="Product 5">
+          <img src="The Stack.jpg" alt="Product 5">
           <div class="product-details">
-            <div class="product-title">Product Title</div>
+            <div class="product-title">The Stack Wallet</div>
             <div class="product-price">$19.99</div>
           </div>
         </div>
@@ -153,94 +153,25 @@ through our shop below. To learn more about us, check out our socials
       </div>
     </a>
 
+    <a href="https://www.linkedin.com/company/pmp26/?viewAsMember=true" class="service-box-link">
+      <div class="service-box">
+        <h3 class="service-title">Thank you for Stopping By!</h3>
+        <img src="Services/Photoo.png" alt="Consultation Image">
+      </div>
+    </a>
   </div>
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<!-- Contact Form Section -->
-<section id="contact">
-  <div style="max-width:500px;margin:auto;">
-    <h2 class="section-title">Contact Us</h2>
-    
-    <form id="contactForm">
-      <input 
-        type="email" 
-        name="from_email" 
-        placeholder="Your email" 
-        required 
-        style="width:100%;padding:12px;margin-bottom:12px;border-radius:6px;border:1px solid #ccc;"
-      />
-
-      <textarea 
-        name="message" 
-        placeholder="Your message" 
-        rows="5" 
-        required 
-        style="width:100%;padding:12px;border-radius:6px;border:1px solid #ccc;"
-      ></textarea>
-
-      <button 
-        type="submit"
-        style="
-          position: relative;
-          background-color: #03183C;
-          color: white;
-          font-weight: 800;
-          font-size: 1.1em;
-          padding: 12px 36px;
-          border-radius: 9999px;
-          border: none;
-          cursor: pointer;
-          margin-top: 16px;
-        "
-      >
-        <span style="position: relative; z-index: 10;">SEND</span>
-        <span style="
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          padding: 4px 12px;
-        "></span>
-      </button>
-    </form>
-
-    <p id="responseMessage" style="text-align:center;margin-top:12px;font-size:0.9em;"></p>
-  </div>
-</section>
-
-  <!-- EmailJS SDK -->
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
-<script>
-  // Init EmailJS with your Public Key
-  (function() {
-    emailjs.init("AuqKVrASOWxsG7oJ6"); // ✅ Replace with your own public key
-    console.log("✅ EmailJS Initialized");
-  })();
-
-  // Add submit handler
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contactForm");
-
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
-      console.log("📤 Sending email...");
-
-      emailjs.send("service_4rj6457", "template_got5u2h", {
-        from_email: form.from_email.value,
-        message: form.message.value
-      })
-      .then(function () {
-        console.log("✅ Email sent successfully");
-        document.getElementById("responseMessage").innerText = "✅ Message sent!";
-        form.reset();
-      }, function (error) {
-        console.error("❌ Failed to send", error);
-        document.getElementById("responseMessage").innerText = "⚠️ Failed to send.";
-      });
-    });
-  });
-</script>
+  <section id="contact">
+  <h2 class="section-title">Contact Us</h2>
+          <div class="about-textbox">
+            Email: pmprints26@gmail.com</div>
+          <div class="about-textbox">
+            Phone Number: +1 786-505-7416</div>
+          <div class="about-textbox"style="margin-bottom: 100px;">
+            Or Click on our Photo above to access our LinkedIn</div>
+            
+        </div>
+      </section>
 
   <footer>
     <div class="footer-content">
